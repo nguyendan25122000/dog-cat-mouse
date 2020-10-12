@@ -5,7 +5,7 @@ function Dog(name) {
 }
 
 Dog.prototype.sayHi = function() {
-    console.log("Hi! Im " + chalk.red(this.name));
+    console.log("Hi! Im " + chalk.yellow(this.name));
 };
 
 module.exports = Dog;
