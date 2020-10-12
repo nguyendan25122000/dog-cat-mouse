@@ -10,7 +10,11 @@ Dog.prototype.sayHi = function() {
 };
 
 Dog.prototype.run = function() {
-    console.log("dog run" + this.fast + "s");
+    if (this.fast >= 50) {
+        console.log("dog run fast with speed " + this.fast + "s");
+    } else {
+        throw new Error("dog run slow!!!");
+    }
 };
 
 module.exports = Dog;
